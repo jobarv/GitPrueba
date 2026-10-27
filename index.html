@@ -1,18 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MotionTech | Industrial Automation & AI</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1>Hello, World!</h1>
-    <h2>This is a sample HTML page.</h2>
-    <main>
-        <h3>Esto es un titulo de h3</h3>
-    </main>
-</body>
 
+    <!-- Header using Flexbox for horizontal alignment -->
+    <header class="main-header flex-container">
+        <div class="logo">
+            <h1>MotionTech</h1>
+        </div>
+        <nav class="main-nav">
+            <ul class="flex-container">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section using Flexbox for vertical centering -->
+        <section id="about" class="hero-section flex-column">
+            <h2>Scalable Industrial Automation</h2>
+            <p>Integrating PLCs, IIoT sensors, and AI-driven software for modern industry.</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </section>
+
+        <!-- Gallery Section using CSS Grid for 2D layout -->
+        <section id="gallery" class="gallery-section">
+            <h2>Our Integration Projects</h2>
+            <div class="grid-gallery">
+                <!-- Gallery Items -->
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=SCADA+System" alt="SCADA System Interface">
+                    <div class="overlay">SCADA Dashboard</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=VFD+Control" alt="VFD Control Panel">
+                    <div class="overlay">Veikong VFD Integration</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=IoT+Sensors" alt="IoT Sensor Node">
+                    <div class="overlay">IIoT Sensor Network</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=Data+Pipeline" alt="Data Pipeline Diagram">
+                    <div class="overlay">Edge to Cloud Pipeline</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=Machine+Learning" alt="AI Analytics">
+                    <div class="overlay">Predictive Maintenance AI</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x300?text=Robotics" alt="Industrial Robot">
+                    <div class="overlay">Automated Assembly</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer using Flexbox -->
+    <footer id="contact" class="main-footer flex-container">
+        <p>&copy; 2026 MotionTech Solutions. All rights reserved.</p>
+        <div class="social-links flex-container">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </footer>
+
+</body>
 </html>
